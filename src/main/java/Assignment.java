@@ -7,10 +7,11 @@ public class Assignment {
     public static final Scanner scanner = new Scanner(System.in);
     
     public static void main(String[] args) {
-      String repeated = repeatWord("", 0);
+      String repeated = repeatWord("hello", 9);
       System.out.println(repeated);
-      String pyramid = createPyramid(0);
+      String pyramid = createPyramid(6);
       String FizzBuzz = countTo(3);
+      System.out.println(pyramid);
       
     }
     
@@ -25,7 +26,17 @@ public class Assignment {
         // Use a while loop to build a string that repeats the word
         // Words should be separated by single spaces
         // No trailing space at the end
-        return "test";
+        String prab = "";
+
+        while (times != 0){
+            prab = prab + word + "";
+            times -=1;
+            
+        }
+
+        
+
+        return prab;
 
     
     }
@@ -44,7 +55,18 @@ public class Assignment {
         // - Outer loop for each row
         // - Inner loop to repeat the number
         // Use \n for newlines
-        return "";
+        String num = Integer.toString(maxNumber);
+        int maxNumber2 = maxNumber;
+        String line = "";
+        while(maxNumber != 0)
+        maxNumber2 = maxNumber;
+        maxNumber -=1;
+            while (maxNumber2 != 0){
+                line = line + num;
+                maxNumber2 -=1;
+            }
+            return line;
+       
     }
     
  
